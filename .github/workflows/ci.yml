@@ -17,8 +17,10 @@ jobs:
   go:
     uses: ads-iscte-rg-ja/monitor-platform/.github/workflows/go-ci.yml@v1
     with:
-      # replace => ../monitor-go-sdk no go.mod; sai quando o SDK tiver versões publicadas.
-      sibling-repos: ads-iscte-rg-ja/monitor-go-sdk
+      # monitor-go-sdk: replace => ../monitor-go-sdk no go.mod (sai quando o SDK tiver versões publicadas).
+      # monitor-remote: os testes do SDK usam ../monitor-remote/database/schema.sql, o esquema
+      # do buffer que pertence ao remote (contrato entre os dois).
+      sibling-repos: ads-iscte-rg-ja/monitor-go-sdk ads-iscte-rg-ja/monitor-remote
       # false durante a medição de baseline (iteração 0); true depois.
       lint-blocking: false
     secrets: inherit
