@@ -14,10 +14,10 @@ permissions:
 
 jobs:
   go:
-    uses: joaoaeafonso/monitor-platform/.github/workflows/go-ci.yml@v1
+    uses: ads-iscte-rg-ja/monitor-platform/.github/workflows/go-ci.yml@v1
     with:
       # replace => ../monitor-go-sdk no go.mod; sai quando o SDK tiver versões publicadas.
-      sibling-repos: rmgh97/monitor-go-sdk
+      sibling-repos: ads-iscte-rg-ja/monitor-go-sdk
       # false durante a medição de baseline (iteração 0); true depois.
       lint-blocking: false
     secrets: inherit
