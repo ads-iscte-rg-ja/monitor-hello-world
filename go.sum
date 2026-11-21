@@ -1,4 +1,4 @@
-github.com/ads-iscte-rg-ja/monitor-go-sdk v0.1.0 h1:OzPuEuh6wbPry88BMnXU3N8hoJhEKCah6WlJdRs2M+Q=
-github.com/ads-iscte-rg-ja/monitor-go-sdk v0.1.0/go.mod h1:rMpLx3TxwdsQ1u9SgSkg1mqoazhBQUzFNDc8VuzAHPU=
+github.com/ads-iscte-rg-ja/monitor-go-sdk v0.2.0 h1:1XVM3CR7FHVgSF0J5Zqz2BKfhuQcn35r/XjteM+/j4A=
+github.com/ads-iscte-rg-ja/monitor-go-sdk v0.2.0/go.mod h1:rMpLx3TxwdsQ1u9SgSkg1mqoazhBQUzFNDc8VuzAHPU=
 github.com/mattn/go-sqlite3 v1.14.53 h1:mnTM0owzUMrKuLo+0w51NUiB0ir2Fo7kFXlPt/l3BGs=
 github.com/mattn/go-sqlite3 v1.14.53/go.mod h1:6JTjA44L93a0QCyJef5YvlPoKXntQPjzWv5gtm9sB6w=
