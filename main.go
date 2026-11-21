@@ -48,9 +48,9 @@ func run(ctx context.Context, scenario, path string, count int) error {
 	switch scenario {
 	case "logs":
 		for i := 0; i < count; i++ {
-			for _, level := range []string{"INFO", "WARN", "ERROR", "CRITICAL", "PANIC"} {
+			for _, level := range monitor.Levels {
 				details := monitor.ErrorDetails{Metadata: json.RawMessage(`{"simulated":true}`)}
-				if level == "CRITICAL" || level == "PANIC" {
+				if level == monitor.LevelCritical || level == monitor.LevelPanic {
 					stack := string(debug.Stack())
 					details.StackTrace = &stack
 				}
@@ -62,7 +62,7 @@ func run(ctx context.Context, scenario, path string, count int) error {
 		return nil
 	case "panic":
 		return capturePanic(func(message, stack string) error {
-			_, err := monitor.LogError(ctx, db, "hello-world", "testing", "PANIC", message, monitor.ErrorDetails{StackTrace: &stack})
+			_, err := monitor.LogError(ctx, db, "hello-world", "testing", monitor.LevelPanic, message, monitor.ErrorDetails{StackTrace: &stack})
 			return err
 		})
 	default:
