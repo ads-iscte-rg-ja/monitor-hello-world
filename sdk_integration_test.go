@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	monitorsdk "github.com/rmg-unicage/monitor-go-sdk"
+	monitorsdk "github.com/ads-iscte-rg-ja/monitor-go-sdk"
 )
 
 // Test fixtures only: emulate the database remote prepares using its actual

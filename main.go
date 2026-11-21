@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	monitor "github.com/rmg-unicage/monitor-go-sdk"
+	monitor "github.com/ads-iscte-rg-ja/monitor-go-sdk"
 )
 
 func main() {

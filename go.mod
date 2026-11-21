@@ -4,8 +4,6 @@ go 1.25.0
 
 toolchain go1.27.4
 
-require github.com/rmg-unicage/monitor-go-sdk v0.0.0
+require github.com/ads-iscte-rg-ja/monitor-go-sdk v0.1.0
 
 require github.com/mattn/go-sqlite3 v1.14.53 // indirect
-
-replace github.com/rmg-unicage/monitor-go-sdk => ../monitor-go-sdk

@@ -7,8 +7,9 @@ It writes sample logs and a recovered panic to the local SQLite buffer;
 ## Setup
 
 - Use **Go 1.25+**, a **C compiler**, and **`CGO_ENABLED=1`** for SQLite.
-- Keep the sibling `monitor-go-sdk/` directory available; `go.mod` uses it as the
-  local SDK replacement.
+- The SDK is the published module `github.com/ads-iscte-rg-ja/monitor-go-sdk`
+  (pinned in `go.mod`). To try unreleased SDK changes, create a local `go.work`
+  with `../monitor-platform/scripts/go-work.sh`.
 - Initialize the database through remote first. Start the agent to deliver
   records to central, or leave it stopped to try local buffering.
 
